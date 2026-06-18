@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Volt Elektro 1 GmbH – Ihr Elektro-Fachbetrieb in Bischofsheim. Elektroinstallationen, Smart-Home, Sicherheitstechnik und 24h-Notdienst.">
-  <title>Volt Elektro 1 GmbH – Alles Watt ihr Volt</title>
+  <meta name="description" content="Volt Elektro 1 GmbH – Elektrotechnik-Fachbetrieb im Rhein-Main-Gebiet. Elektroinstallationen, Smart Home, Sicherheitstechnik und 24h-Notdienst in Bischofsheim.">
+  <title>Volt Elektro 1 GmbH – Elektrotechnik aus Bischofsheim</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,16 +15,24 @@
   <!-- Navigation -->
   <header class="header" id="header">
     <div class="container header-inner">
-      <a href="#" class="logo">
-        <span class="logo-volt">Volt</span> Elektro
+      <a href="#" class="logo" aria-label="Volt Elektro 1 GmbH – Startseite">
+        <div class="logo-mark">V</div>
+        <div class="logo-text">
+          <span class="logo-name">Volt Elektro</span>
+          <span class="logo-sub">Elektrotechnik-Fachbetrieb</span>
+        </div>
       </a>
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" role="navigation">
         <a href="#leistungen" class="nav-link">Leistungen</a>
         <a href="#vorteile" class="nav-link">Vorteile</a>
         <a href="#zielgruppen" class="nav-link">Zielgruppen</a>
         <a href="#kontakt" class="nav-link">Kontakt</a>
+        <a href="tel:061449563141" class="nav-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Anrufen
+        </a>
       </nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Menü öffnen">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Navigation öffnen" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -34,13 +42,43 @@
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-img" role="img" aria-label="Elektriker arbeitet an einem modernen Schaltschrank">
+        <!-- Platzhalter-Bild: später durch echtes Foto ersetzen -->
+        <div class="hero-img-placeholder">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Platzhalterbild – Elektriker am Schaltschrank</span>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
     <div class="container hero-content">
-      <p class="hero-label">Elektro-Fachbetrieb in Bischofsheim</p>
-      <h1>Alles Watt ihr Volt</h1>
-      <p class="hero-text">Zuverlässige Elektroinstallationen für Privat- und Gewerbekunden. Von der Planung bis zur Umsetzung – kompetent, termingerecht und sicher.</p>
+      <div class="hero-badge">Elektro-Fachbetrieb im Rhein-Main-Gebiet</div>
+      <h1>Elektrotechnik für Privat,<br>Gewerbe und Projekte</h1>
+      <p class="hero-slogan">Alles Watt ihr Volt</p>
+      <p class="hero-text">Wir planen, installieren und warten Ihre Elektrotechnik – zuverlässig, normgerecht und termingerecht. Vom Einfamilienhaus bis zum Gewerbeobjekt.</p>
       <div class="hero-actions">
-        <a href="tel:061449563141" class="btn btn-primary">Jetzt anrufen</a>
-        <a href="#kontakt" class="btn btn-secondary">Kontakt aufnehmen</a>
+        <a href="#kontakt" class="btn btn-primary">
+          Jetzt anfragen
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#leistungen" class="btn btn-outline">Leistungen ansehen</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">24h</span>
+          <span class="hero-stat-label">Notdienst</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">Rhein-Main</span>
+          <span class="hero-stat-label">Einsatzgebiet</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">Komplett</span>
+          <span class="hero-stat-label">Alles aus einer Hand</span>
+        </div>
       </div>
     </div>
   </section>
@@ -48,104 +86,144 @@
   <!-- Leistungen -->
   <section class="section" id="leistungen">
     <div class="container">
-      <p class="section-label">Was wir bieten</p>
-      <h2 class="section-title">Unsere Leistungen</h2>
-      <p class="section-subtitle">Von der klassischen Elektroinstallation bis zur modernen Smart-Home-Lösung – wir decken das gesamte Spektrum der Elektrotechnik ab.</p>
+      <div class="section-header">
+        <div class="section-label">Unser Leistungsspektrum</div>
+        <h2 class="section-title">Professionelle Elektrotechnik<br>für jedes Projekt</h2>
+        <p class="section-intro">Von der klassischen Hausinstallation bis zur komplexen Gewerbeanlage – wir bieten Ihnen das komplette Spektrum moderner Elektrotechnik.</p>
+      </div>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <div class="service-card fade-up">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
-          <h3>Elektroinstallationen</h3>
-          <p>Fachgerechte Elektroinstallationen für Neu- und Altbauten. Wir planen und realisieren Ihre komplette Elektrik nach aktuellen Normen und Standards.</p>
+          <h3>Elektroinstallation</h3>
+          <p>Komplette Elektroinstallation nach aktuellen VDE-Normen – von der Unterverteilung bis zur letzten Steckdose. Fachgerecht und zukunftssicher geplant.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        <div class="service-card fade-up">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
           </div>
-          <h3>Reparatur &amp; Wartung</h3>
-          <p>Schnelle und zuverlässige Reparaturen sowie regelmäßige Wartung Ihrer elektrischen Anlagen. Wir sorgen für den störungsfreien Betrieb.</p>
+          <h3>Neu- und Altbau</h3>
+          <p>Ob Neubau, Sanierung oder Erweiterung – wir passen die Elektroplanung an Ihr Gebäude an und setzen sie termingerecht um.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        <div class="service-card fade-up">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           </div>
-          <h3>Sicherheits- &amp; Beleuchtungstechnik</h3>
-          <p>Moderne Beleuchtungskonzepte und Sicherheitstechnik für Ihr Zuhause oder Gewerbe. Von der LED-Planung bis zur Notbeleuchtung.</p>
+          <h3>Wartung &amp; Reparatur</h3>
+          <p>Regelmäßige Wartung und schnelle Reparaturen für den störungsfreien Betrieb Ihrer elektrischen Anlagen. Wir reagieren zügig und lösen das Problem.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        <div class="service-card fade-up">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
+          <h3>Beleuchtungstechnik</h3>
+          <p>Professionelle Lichtplanung für Innen- und Außenbereiche. Energieeffiziente LED-Lösungen, Notbeleuchtung und Sicherheitsbeleuchtung.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
           </div>
           <h3>Netzwerk &amp; Smart Home</h3>
-          <p>Strukturierte Netzwerkverkabelung und intelligente Gebäudetechnik. Wir vernetzen Ihr Zuhause oder Büro für die Zukunft.</p>
+          <p>Strukturierte Netzwerkverkabelung und intelligente Gebäudesteuerung. Wir vernetzen Ihr Zuhause oder Büro – durchdacht und zukunftsfähig.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="10" y1="4" x2="10" y2="20"/></svg>
+        <div class="service-card fade-up">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="10" y1="4" x2="10" y2="20"/></svg>
           </div>
           <h3>Zählerschränke &amp; Verteiler</h3>
-          <p>Planung, Installation und Modernisierung von Zählerschränken und Verteileranlagen – normgerecht und zukunftssicher.</p>
+          <p>Normgerechte Zählerschränke und Verteileranlagen – Neuinstallation, Aufrüstung und Modernisierung nach TAB und VDE-Vorschriften.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div class="service-card service-card-highlight fade-up">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <h3>24h-Notdienst</h3>
-          <p>Elektrischer Notfall? Wir sind rund um die Uhr für Sie erreichbar. Schnelle Hilfe bei Stromausfällen, Kurzschlüssen und anderen Störungen.</p>
+          <p>Stromausfall, Kurzschluss oder Leitungsschaden? Unser Notdienst ist rund um die Uhr erreichbar. Schnelle Hilfe – auch an Wochenenden und Feiertagen.</p>
+          <a href="tel:017672960288" class="service-cta">
+            Notdienst anrufen
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bildbereich -->
+  <section class="image-break">
+    <div class="container">
+      <div class="image-break-inner">
+        <div class="image-break-img" role="img" aria-label="Moderne Elektroinstallation in einem Gebäude">
+          <div class="hero-img-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Platzhalterbild – Moderne Elektroinstallation</span>
+          </div>
+        </div>
+        <div class="image-break-content">
+          <div class="section-label">Qualität als Prinzip</div>
+          <h2>Saubere Arbeit.<br>Sichere Technik.</h2>
+          <p>Jede Installation, jede Reparatur, jeder Anschluss – wir arbeiten ausschließlich nach geltenden Normen und setzen auf hochwertige Markenprodukte. Das Ergebnis: Technik, die funktioniert und Bestand hat.</p>
+          <ul class="check-list">
+            <li>VDE- und TAB-konforme Ausführung</li>
+            <li>Hochwertige Markenprodukte</li>
+            <li>Dokumentierte Prüfprotokolle</li>
+            <li>Gewährleistung auf alle Arbeiten</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Vorteile -->
-  <section class="section section-alt" id="vorteile">
+  <section class="section section-dark" id="vorteile">
     <div class="container">
-      <p class="section-label">Warum wir</p>
-      <h2 class="section-title">Darauf können Sie sich verlassen</h2>
-      <p class="section-subtitle">Als inhabergeführter Fachbetrieb stehen wir für Qualität, Zuverlässigkeit und persönlichen Service.</p>
+      <div class="section-header section-header-light">
+        <div class="section-label">Warum Volt Elektro</div>
+        <h2 class="section-title">Zuverlässig, transparent<br>und fachlich kompetent</h2>
+        <p class="section-intro">Wir stehen für eine Zusammenarbeit, bei der Sie sich auf klare Absprachen und professionelle Umsetzung verlassen können.</p>
+      </div>
       <div class="benefits-grid">
-        <div class="benefit-item">
-          <div class="benefit-number">01</div>
-          <div>
-            <h3>Fachkompetenz</h3>
-            <p>Qualifizierte Elektriker mit langjähriger Erfahrung in allen Bereichen der Elektrotechnik. Regelmäßige Weiterbildung ist für uns selbstverständlich.</p>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
+          <h3>Klare Kommunikation</h3>
+          <p>Sie erfahren vorab, was gemacht wird, wie lange es dauert und was es kostet. Keine Überraschungen, keine unklaren Angebote.</p>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-number">02</div>
-          <div>
-            <h3>Termintreue</h3>
-            <p>Verbindliche Terminzusagen und pünktliche Ausführung. Wir halten, was wir versprechen – bei jedem Projekt, unabhängig von der Größe.</p>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </div>
+          <h3>Feste Ansprechpartner</h3>
+          <p>Ihr Projekt wird von Anfang bis Ende von einem festen Ansprechpartner betreut. Einer, der Ihr Vorhaben kennt und Verantwortung übernimmt.</p>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-number">03</div>
-          <div>
-            <h3>Faire Preise</h3>
-            <p>Transparente Kostenvoranschläge ohne versteckte Posten. Sie wissen vorab, was Ihr Projekt kostet – ohne unangenehme Überraschungen.</p>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
+          <h3>Schnelle Reaktionszeiten</h3>
+          <p>Kurze Wege im Rhein-Main-Gebiet und ein eingespieltes Team sorgen dafür, dass wir schnell vor Ort sind – auch bei kurzfristigen Anfragen.</p>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-number">04</div>
-          <div>
-            <h3>Alles aus einer Hand</h3>
-            <p>Von der Beratung über die Planung bis zur Umsetzung und Abnahme. Ein Ansprechpartner, der Ihr Projekt von Anfang bis Ende begleitet.</p>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           </div>
+          <h3>Normgerechte Ausführung</h3>
+          <p>Jede Installation erfolgt nach aktuellen VDE-Richtlinien und wird sauber dokumentiert. Sicherheit und Qualität haben bei uns oberste Priorität.</p>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-number">05</div>
-          <div>
-            <h3>Regionaler Betrieb</h3>
-            <p>Verwurzelt in Bischofsheim und der Region. Kurze Wege, schnelle Reaktionszeiten und persönliche Betreuung vor Ort.</p>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
+          <h3>Hochwertige Materialien</h3>
+          <p>Wir verbauen ausschließlich geprüfte Markenprodukte. Das gewährleistet Langlebigkeit, Sicherheit und einfache Wartung Ihrer Anlagen.</p>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-number">06</div>
-          <div>
-            <h3>Notdienst-Bereitschaft</h3>
-            <p>24 Stunden am Tag, 7 Tage die Woche. Bei elektrischen Notfällen sind wir schnell zur Stelle – auch außerhalb der Geschäftszeiten.</p>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
+          <h3>Transparente Beratung</h3>
+          <p>Wir beraten ehrlich und lösungsorientiert – ohne unnötige Zusatzleistungen. Sie entscheiden auf Basis klarer Informationen und fairer Preise.</p>
         </div>
       </div>
     </div>
@@ -154,72 +232,108 @@
   <!-- Zielgruppen -->
   <section class="section" id="zielgruppen">
     <div class="container">
-      <p class="section-label">Für wen wir arbeiten</p>
-      <h2 class="section-title">Unsere Einsatzbereiche</h2>
-      <p class="section-subtitle">Ob Eigenheim, Gewerbeobjekt oder Großprojekt – wir sind der richtige Partner für Ihre elektrotechnischen Anforderungen.</p>
+      <div class="section-header">
+        <div class="section-label">Einsatzbereiche</div>
+        <h2 class="section-title">Für wen wir arbeiten</h2>
+        <p class="section-intro">Unsere Leistungen richten sich an alle, die zuverlässige Elektrotechnik brauchen – vom Eigenheim bis zum Großprojekt.</p>
+      </div>
       <div class="audience-grid">
-        <div class="audience-card">
-          <h3>Privatkunden</h3>
-          <p>Elektroinstallationen, Renovierungen und Smart-Home-Lösungen für Ihr Zuhause. Persönliche Beratung und saubere Ausführung.</p>
-        </div>
-        <div class="audience-card">
-          <h3>Gewerbekunden</h3>
-          <p>Elektrische Infrastruktur für Büros, Praxen, Einzelhandel und Gastronomie. Wir minimieren Ausfallzeiten und maximieren Effizienz.</p>
-        </div>
-        <div class="audience-card">
-          <h3>Hausverwaltungen</h3>
-          <p>Zuverlässiger Partner für die Betreuung Ihrer Liegenschaften. Regelmäßige Wartung, Prüfungen und schnelle Störungsbehebung.</p>
-        </div>
-        <div class="audience-card">
-          <h3>Bauträger</h3>
-          <p>Komplette elektrotechnische Ausstattung für Bauprojekte. Termingerechte Ausführung und enge Abstimmung mit allen Gewerken.</p>
-        </div>
-        <div class="audience-card">
-          <h3>Kooperationspartner</h3>
-          <p>Partnerschaftliche Zusammenarbeit mit Architekten, Planern und anderen Handwerksbetrieben. Gemeinsam für das beste Ergebnis.</p>
-        </div>
+        <a href="#kontakt" class="audience-card fade-up">
+          <div class="audience-top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <h3>Privatkunden</h3>
+          </div>
+          <p>Elektroinstallation, Renovierung und Smart-Home-Lösungen für Ihr Zuhause. Persönliche Beratung, saubere Umsetzung und faire Konditionen.</p>
+          <span class="audience-link">Anfrage stellen</span>
+        </a>
+        <a href="#kontakt" class="audience-card fade-up">
+          <div class="audience-top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <h3>Gewerbekunden</h3>
+          </div>
+          <p>Elektrische Infrastruktur für Büros, Praxen, Einzelhandel und Gastronomie. Wir minimieren Ausfallzeiten und planen effiziente Lösungen.</p>
+          <span class="audience-link">Anfrage stellen</span>
+        </a>
+        <a href="#kontakt" class="audience-card fade-up">
+          <div class="audience-top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <h3>Hausverwaltungen</h3>
+          </div>
+          <p>Zuverlässige Betreuung Ihrer Liegenschaften – regelmäßige Wartung, E-Checks und schnelle Störungsbehebung. Planbarer Service für Ihren Bestand.</p>
+          <span class="audience-link">Anfrage stellen</span>
+        </a>
+        <a href="#kontakt" class="audience-card fade-up">
+          <div class="audience-top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <h3>Bauträger</h3>
+          </div>
+          <p>Komplette elektrotechnische Ausstattung für Ihre Bauprojekte. Termingerechte Ausführung und verlässliche Abstimmung mit allen Gewerken.</p>
+          <span class="audience-link">Anfrage stellen</span>
+        </a>
+        <a href="#kontakt" class="audience-card fade-up">
+          <div class="audience-top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3>Kooperationspartner</h3>
+          </div>
+          <p>Partnerschaftliche Zusammenarbeit mit Architekten, Planungsbüros und Handwerksbetrieben. Gemeinsam für das beste Projektergebnis.</p>
+          <span class="audience-link">Anfrage stellen</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Kontakt -->
-  <section class="section section-alt" id="kontakt">
+  <section class="section section-contact" id="kontakt">
     <div class="container">
-      <p class="section-label">Sprechen Sie uns an</p>
-      <h2 class="section-title">Kontakt</h2>
-      <p class="section-subtitle">Wir freuen uns auf Ihre Anfrage. Rufen Sie uns an, schreiben Sie uns eine E-Mail oder besuchen Sie uns vor Ort.</p>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <div class="contact-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="section-label">Kontakt aufnehmen</div>
+          <h2 class="section-title">Sprechen Sie<br>mit uns</h2>
+          <p>Ob konkretes Projekt oder erste Anfrage – wir beraten Sie gerne. Rufen Sie an, schreiben Sie uns oder kommen Sie vorbei.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Telefon</div>
+                <a href="tel:061449563141" class="contact-method-value">06144 9563141</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Mobil &amp; Notdienst</div>
+                <a href="tel:017672960288" class="contact-method-value">0176 72960288</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-method-label">E-Mail</div>
+                <a href="mailto:info@volt-elektrik.de" class="contact-method-value">info@volt-elektrik.de</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Standort</div>
+                <span class="contact-method-value">Römer Str. 2-4, 65474 Bischofsheim</span>
+              </div>
+            </div>
           </div>
-          <h3>Telefon</h3>
-          <a href="tel:061449563141">06144 9563141</a>
-          <p class="contact-note">Mo – Fr, 8:00 – 17:00 Uhr</p>
         </div>
-        <div class="contact-card">
-          <div class="contact-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <div class="contact-map">
+          <div class="contact-map-placeholder" role="img" aria-label="Standort Volt Elektro 1 GmbH in Bischofsheim">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.25"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Kartenplatzhalter – Google Maps Einbettung</span>
           </div>
-          <h3>Mobil</h3>
-          <a href="tel:017672960288">0176 72960288</a>
-          <p class="contact-note">Auch für Notfälle erreichbar</p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <h3>E-Mail</h3>
-          <a href="mailto:info@volt-elektrik.de">info@volt-elektrik.de</a>
-          <p class="contact-note">Antwort innerhalb von 24 Stunden</p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3>Adresse</h3>
-          <p>Römer Str. 2-4<br>65474 Bischofsheim</p>
-          <p class="contact-note">Termine nach Vereinbarung</p>
         </div>
       </div>
     </div>
@@ -227,30 +341,54 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <span class="logo-volt">Volt</span> Elektro
-        </a>
-        <p>Volt Elektro 1 GmbH<br>Ihr Elektro-Fachbetrieb in Bischofsheim</p>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="Volt Elektro 1 GmbH – Startseite">
+            <div class="logo-mark">V</div>
+            <div class="logo-text">
+              <span class="logo-name">Volt Elektro</span>
+              <span class="logo-sub">Elektrotechnik-Fachbetrieb</span>
+            </div>
+          </a>
+          <p class="footer-about">Volt Elektro 1 GmbH – Ihr Partner für professionelle Elektrotechnik im Rhein-Main-Gebiet. Planung, Installation und Service aus einer Hand.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#vorteile">Vorteile</a>
+          <a href="#zielgruppen">Zielgruppen</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <a href="tel:061449563141">06144 9563141</a>
+          <a href="tel:017672960288">0176 72960288</a>
+          <a href="mailto:info@volt-elektrik.de">info@volt-elektrik.de</a>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#leistungen">Leistungen</a>
-        <a href="#vorteile">Vorteile</a>
-        <a href="#zielgruppen">Zielgruppen</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <div class="footer-legal">
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
+      <div class="footer-bottom">
         <p>&copy; 2026 Volt Elektro 1 GmbH. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
+    <div class="cookie-content">
+      <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzererfahrung zu bieten. Weitere Informationen finden Sie in unserer <a href="#">Datenschutzerklärung</a>.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-cookie-accept" id="cookie-accept">Akzeptieren</button>
+        <button class="btn btn-cookie-decline" id="cookie-decline">Ablehnen</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
